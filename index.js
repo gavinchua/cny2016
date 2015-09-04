@@ -5,7 +5,8 @@ var static  = require('express-static');
 
 // Listen on port 8000
 // Uses process.env.PORT for Heroku deployment as Heroku will dynamically assign a port
-server.listen(process.env.PORT || 8000);
+//server.listen(process.env.PORT || 8000);
+app.set('port', (process.env.PORT || 5000));
 
 // Serve static files
 app.use("/assets/css/dist", static(__dirname + '/assets/css/dist'));
