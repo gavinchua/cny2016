@@ -1,0 +1,445 @@
+@import "../style.styl";
+
+//
+// Monkey
+// --------------------------------------------------
+
+zodiac = "monkey/"
+
+.monkey-wrapper
+	overflow hidden
+	
+	/*.scene0
+		.character
+			height 499px
+			width 400px
+			
+			.character-shadow
+				bottom -5px*/
+				
+	.caption
+		position absolute
+		text-align center
+		width 100%
+		z-index 6
+		
+		p
+			background rgba(0, 0, 0, 0.7)
+			font-size 15px
+			display inline-block
+			margin 0 auto
+			padding 10px 20px
+			width 90%
+			
+			@media (min-width: width-tabletportrait)
+				font-size 24px
+				
+			@media (min-width: width-tabletlandscape)
+				font-size 30px
+				width auto
+				
+	.scene1
+		background url(img-folder zodiac "bg-scene1.svg") center center no-repeat
+		background-size cover
+		position relative
+		z-index 3
+		
+		.desk-scene1
+			background url(img-folder zodiac "desk-scene1.svg") 0 0 no-repeat
+			background-size contain
+			//height 572px
+			height 145px
+			position relative
+			//width 1180px
+			width 300px
+			margin 0 auto
+			top 170px
+			
+			@media (min-width: width-tabletportrait)
+				width 720px
+				height 349px
+				top -60px
+				
+			@media (min-width: width-tabletlandscape)
+				width 900px
+				height 436px
+				
+			@media (min-width: width-desktop)
+				width 1100px
+				height 533px
+		
+		.speech-bubble
+			background url(img-folder zodiac "speech-bubble-scene1.svg") 0 0 no-repeat
+			background-size contain
+			//height 188px
+			height 176px
+			position relative
+			//width 182px
+			width 170px
+			margin 0 auto
+			top 20%
+			left -20%
+			opacity 0
+			
+			@media (min-width: width-tabletportrait)
+				width 120px
+				height 124px
+				top 10%
+				left -25%
+			
+			@media (min-width: width-tabletlandscape)
+				width 150px
+				height 155px
+				top 15%
+				left -20%
+				
+			@media (min-width: width-desktop)
+				width 170px
+				height 176px
+		
+		.hand-wrapper
+			left 50%
+			margin-left -46px
+			opacity 1
+			position absolute
+			top 35px
+			//width 90%
+			width 99px
+			z-index 3
+			
+			@media (min-width: width-tabletportrait)
+				margin-left -145px
+				width 320px
+				top 80px
+				
+			@media (min-width: width-tabletlandscape)
+				margin-left -155px
+				width 330px
+				top 100px
+				
+			@media (min-width: width-desktop)
+				margin-left -200px
+				width 430px
+				
+			.pull-left
+				background url(img-folder zodiac "monkey-hand-left.svg") 0 0 no-repeat
+				background-size contain
+				//height 218px
+				height 34px
+				position relative
+				//width 240px
+				width 45px
+				-ms-transform: rotate(-55deg); /* IE 9 */
+				-webkit-transform: rotate(-55deg); /* Chrome, Safari, Opera */
+				transform: rotate(-55deg);	
+				top 70px
+				left 90px
+				
+				@media (min-width: width-tabletportrait)
+					height 118px
+					width 130px
+					
+				@media (min-width: width-tabletlandscape)
+					height 113px
+					width 150px
+					
+				@media (min-width: width-desktop)
+					height 150px
+					width 200px
+					
+			.pull-right
+				background url(img-folder zodiac "monkey-hand-right.svg") 0 0 no-repeat
+				background-size contain
+				//height 169px
+				height 34px
+				position relative
+				//width 236px
+				width 45px
+				top 50px
+				left -70px
+				
+				@media (min-width: width-tabletportrait)
+					height 93px
+					width 130px
+					
+				@media (min-width: width-tabletlandscape)
+					height 113px
+					width 150px
+					
+				@media (min-width: width-desktop)
+					height 129px
+					width 180px
+					
+		.character
+			background url(img-folder zodiac "character-scene1.svg") center center no-repeat
+			background-size contain
+			height 148px
+			margin 0 auto
+			opacity 0
+			position relative
+			//top -76.8%
+			top 26%
+			width 100px
+			
+			@media (min-width: width-tabletportrait)
+				height 380px
+				top 17%
+				width 563px
+				
+			@media (min-width: width-tabletlandscape)
+				height 450px
+				top 26%
+				width 667px
+				
+			@media (min-width: width-desktop)
+				height 499px
+				top 26%
+				width 470px
+				
+			/*.character-shadow
+				background url(img-folder "character-shadow.svg") center center no-repeat
+				background-size contain
+				bottom -5px
+				left 50%
+				margin-left -80px
+				position absolute
+				height 15px
+				width 160px*/
+			
+		.caption
+			bottom 70px
+			
+	.scene2
+		background url(img-folder zodiac "bg-scene2.svg") center 0 no-repeat
+		background-size cover
+		position relative
+		top -200px
+		z-index 4
+		
+		.desk-scene2
+			background url(img-folder zodiac "desk-scene2.svg") 0 0 no-repeat
+			background-size contain
+			//height 339px
+			height 374px
+			position relative
+			//width 1177px
+			width 1300px
+			margin 0 auto
+			top 130px
+			
+			@media (min-width: width-tabletlandscape)
+				width 1140
+				top 50px
+					
+			@media (min-width: width-desktop)
+				width 1300px
+				top 130px
+		
+		.phone-wrapper
+			left 0
+			margin-left -145px
+			opacity 1
+			position absolute
+			top 20%
+			//width 90%
+			width 200px
+			
+			@media (min-width: width-tabletportrait)
+				margin-left -145px
+				width 200px
+				
+			@media (min-width: width-tabletlandscape)
+				margin-left -185px
+				width 670px
+				top 25%
+				
+			@media (min-width: width-desktop)
+				margin-left -275px
+				width 870px
+				top 22%
+				
+			.phone-left
+				background url(img-folder zodiac "monkey-phone-left.svg") 0 0 no-repeat
+				background-size contain
+				//height 466px
+				height 75px
+				position relative
+				//width 607px
+				width 100px
+				float left!important
+				
+				@media (min-width: width-tabletportrait)
+					height 75px
+					width 100px
+					
+				@media (min-width: width-tabletlandscape)
+					height 231px
+					width 300px
+					
+				@media (min-width: width-desktop)
+					height 307px
+					width 400px
+					
+			.phone-right
+				background url(img-folder zodiac "monkey-phone-right.svg") 0 0 no-repeat
+				background-size contain
+				//height 439px
+				height 196px
+				position relative
+				//width 447px
+				width 200px
+				float right!important
+				
+				@media (min-width: width-tabletportrait)
+					height 196px
+					width 200px
+					
+				@media (min-width: width-tabletlandscape)
+					height 295px
+					width 300px
+					
+				@media (min-width: width-desktop)
+					height 393px
+					width 400px
+		
+		.character
+			background url(img-folder zodiac "character-scene1.svg") center center no-repeat
+			background-size contain
+			height 139px
+			margin 0 auto
+			opacity 0
+			position relative
+			//top -76.8%
+			top 26%
+			width 130px
+			
+			@media (min-width: width-tabletportrait)
+				height 329px
+				top 30%
+				width 310px
+				
+			@media (min-width: width-tabletlandscape)
+				height 445px
+				top 26%
+				width 300px
+				
+			@media (min-width: width-desktop)
+				height 474px
+				top 40%
+				width 320px
+						
+		.caption
+			bottom 50px
+			
+	.scene3
+		background url(img-folder zodiac "bg-scene3.svg") center 0 no-repeat
+		background-size cover
+		//position absolute
+		position relative
+		top -200px
+		z-index 5
+		
+		/*@media (min-width: width-tabletlandscape)
+			background url(img-folder zodiac "bg-scene3.svg") center 0 no-repeat
+			background-size cover*/
+			
+		.vehicles
+			background url(img-folder zodiac "vehicles-scene3.svg") center 0 no-repeat
+			background-size contain
+			height 53px
+			margin 0 auto
+			position relative
+			top 100px
+			width 100px
+			
+			@media (min-width: width-tabletportrait)
+				height 105px
+				top 200px
+				width 200px
+				
+			@media (min-width: width-tabletlandscape)
+				height 132px
+				top 300px
+				width 250px
+				
+			@media (min-width: width-desktop)
+				height 158px
+				top 550px
+				width 300px
+				
+		.monkey-body
+			background url(img-folder zodiac "goat-body-scene3.svg") 0 0 no-repeat
+			background-size contain
+			height 28px
+			left 50%
+			margin-left -11px
+			position absolute
+			top 95px
+			width 22px
+			
+			@media (min-width: width-tabletportrait)
+				height 56px
+				margin-left -22px
+				top 190px
+				width 44px
+				
+			@media (min-width: width-tabletlandscape)
+				height 71px
+				margin-left -28px
+				top 290px
+				width 56px
+				
+			@media (min-width: width-desktop)
+				height 84px
+				margin-left -34px
+				top 535px
+				width 66px
+				
+			.monkey-leg-left
+				background url(img-folder zodiac "goat-leg-left.svg") 0 0 no-repeat
+				background-size contain
+				height 28px
+				position absolute
+				width 22px
+				
+				@media (min-width: width-tabletportrait)
+					height 56px
+					width 44px
+					
+				@media (min-width: width-tabletlandscape)
+					height 71px
+					width 55px
+					
+				@media (min-width: width-desktop)
+					height 84px
+					width 66px
+					
+			.monkey-leg-right
+				background url(img-folder zodiac "goat-leg-right.svg") 0 0 no-repeat
+				background-size contain
+				height 28px
+				position absolute
+				width 22px
+				
+				
+				@media (min-width: width-tabletportrait)
+					height 56px
+					width 44px
+					
+				@media (min-width: width-tabletlandscape)
+					height 71px
+					width 55px
+					
+				@media (min-width: width-desktop)
+					height 84px
+					width 66px
+					
+		.caption
+			bottom 10%
+			
+			@media (min-width: width-tabletlandscape)
+				bottom auto
+				top 100px
+				
+			@media (min-width: width-desktop)
+				top 300px

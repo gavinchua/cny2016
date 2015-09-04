@@ -1,0 +1,331 @@
+@import "../style.styl";
+
+//
+// Goat
+// --------------------------------------------------
+
+zodiac = "goat/"
+
+.goat-wrapper
+	overflow hidden
+	
+	/*.scene0
+		.character
+			height 499px
+			width 400px
+			
+			.character-shadow
+				bottom -5px*/
+				
+	.caption
+		position absolute
+		text-align center
+		width 100%
+		z-index 6
+		
+		p
+			background rgba(0, 0, 0, 0.7)
+			font-size 15px
+			display inline-block
+			margin 0 auto
+			padding 10px 20px
+			width 90%
+			
+			@media (min-width: width-tabletportrait)
+				font-size 24px
+				
+			@media (min-width: width-tabletlandscape)
+				font-size 30px
+				width auto
+				
+	.scene1
+		//background url(img-folder zodiac "bg-scene1.svg") center 0 no-repeat
+		//background-size cover
+		background #63c8ce
+		position relative
+		z-index 3
+		
+		.drinks-wrapper
+			left 50%
+			margin-left -140px
+			opacity 0
+			position absolute
+			top 100px
+			//width 90%
+			width 280px
+			z-index 3
+			
+			@media (min-width: width-tabletportrait)
+				margin-left -330px
+				width 660px
+				
+			@media (min-width: width-tabletlandscape)
+				margin-left -430px
+				width 860px
+				
+			@media (min-width: width-desktop)
+				margin-left -550px
+				width 1100px
+				
+			> div
+				background url(img-folder zodiac "drinks-scene1.svg") 0 0 no-repeat
+				background-size contain
+				//height 234px
+				height 34px
+				position relative
+				//width 312px
+				width 45px
+				
+				@media (min-width: width-tabletportrait)
+					height 75px
+					width 100px
+					
+				@media (min-width: width-tabletlandscape)
+					height 113px
+					width 150px
+					
+				@media (min-width: width-desktop)
+					height 150px
+					width 200px
+					
+		.character
+			background url(img-folder zodiac "character-scene1.svg") center center no-repeat
+			background-size contain
+			height 139px
+			margin 0 auto
+			opacity 0
+			position relative
+			//top -76.8%
+			top 26%
+			width 130px
+			
+			@media (min-width: width-tabletportrait)
+				height 329px
+				top 30%
+				width 310px
+				
+			@media (min-width: width-tabletlandscape)
+				height 403px
+				top 26%
+				width 380px
+				
+			@media (min-width: width-desktop)
+				height 499px
+				top 26%
+				width 470px
+				
+			/*.character-shadow
+				background url(img-folder "character-shadow.svg") center center no-repeat
+				background-size contain
+				bottom -5px
+				left 50%
+				margin-left -80px
+				position absolute
+				height 15px
+				width 160px*/
+				
+		.caption
+			bottom 70px
+			
+	.scene2
+		background url(img-folder zodiac "bg-scene2.svg") center 0 no-repeat
+		background-size cover
+		position relative
+		top -200px
+		z-index 4
+		
+		.goatsatwork-wrapper
+			margin 0 auto
+			padding-top 20%
+			//width 90%
+			
+			@media (min-width: width-tabletlandscape)
+				padding-top 5%
+				
+			.display-table-row
+				position absolute
+				
+				&.bottom
+					top 35%
+					
+					@media (min-width: width-tabletlandscape)
+						top 45%
+						
+					.desk
+						z-index 4!important
+						
+					.goatsatwork
+						z-index 3!important
+						
+				.display-table-cell
+					//padding 40px
+					position relative
+					width 50%
+					
+					.desk
+						background url(img-folder zodiac "goatsatwork-desk-scene2.svg") center center no-repeat
+						background-size contain
+						height 100%
+						margin 0 auto
+						position relative
+						z-index 2
+						
+					.goatsatwork
+						background url(img-folder zodiac "goatsatwork-goat-scene2.svg") center center no-repeat
+						background-size contain
+						height 100%
+						left 50%
+						margin 0 auto
+						position absolute
+						top 0
+						z-index 1
+						
+		.clock
+			background url(img-folder zodiac "clock-scene2.svg") 0 0 no-repeat
+			background-size contain
+			//height 118px
+			margin 0 auto
+			position relative
+			//width 118px
+			
+			.hour
+				background url(img-folder zodiac "clock-hour-scene2.svg") 0 0 no-repeat
+				background-size contain
+				//height 118px
+				margin 0 auto
+				position absolute
+				//width 118px
+				
+			.min
+				background url(img-folder zodiac "clock-min-scene2.svg") 0 0 no-repeat
+				background-size contain
+				//height 118px
+				margin 0 auto
+				position absolute
+				//width 118px
+				
+		.clock,
+		.hour,
+		.min
+			height 50px
+			width 50px
+			
+			@media (min-width: width-tabletportrait)
+				height 118px
+				width 118px
+				
+		.caption
+			bottom 50px
+			
+	.scene3
+		background url(img-folder zodiac "bg-scene3.svg") center 0 no-repeat
+		background-size cover
+		//position absolute
+		position relative
+		top -200px
+		z-index 5
+		
+		/*@media (min-width: width-tabletlandscape)
+			background url(img-folder zodiac "bg-scene3.svg") center 0 no-repeat
+			background-size cover*/
+			
+		.vehicles
+			background url(img-folder zodiac "vehicles-scene3.svg") center 0 no-repeat
+			background-size contain
+			height 53px
+			margin 0 auto
+			position relative
+			top 100px
+			width 100px
+			
+			@media (min-width: width-tabletportrait)
+				height 105px
+				top 200px
+				width 200px
+				
+			@media (min-width: width-tabletlandscape)
+				height 132px
+				top 300px
+				width 250px
+				
+			@media (min-width: width-desktop)
+				height 158px
+				top 550px
+				width 300px
+				
+		.goat-body
+			background url(img-folder zodiac "goat-body-scene3.svg") 0 0 no-repeat
+			background-size contain
+			height 28px
+			left 50%
+			margin-left -11px
+			position absolute
+			top 95px
+			width 22px
+			
+			@media (min-width: width-tabletportrait)
+				height 56px
+				margin-left -22px
+				top 190px
+				width 44px
+				
+			@media (min-width: width-tabletlandscape)
+				height 71px
+				margin-left -28px
+				top 290px
+				width 56px
+				
+			@media (min-width: width-desktop)
+				height 84px
+				margin-left -34px
+				top 535px
+				width 66px
+				
+			.goat-leg-left
+				background url(img-folder zodiac "goat-leg-left.svg") 0 0 no-repeat
+				background-size contain
+				height 28px
+				position absolute
+				width 22px
+				
+				@media (min-width: width-tabletportrait)
+					height 56px
+					width 44px
+					
+				@media (min-width: width-tabletlandscape)
+					height 71px
+					width 55px
+					
+				@media (min-width: width-desktop)
+					height 84px
+					width 66px
+					
+			.goat-leg-right
+				background url(img-folder zodiac "goat-leg-right.svg") 0 0 no-repeat
+				background-size contain
+				height 28px
+				position absolute
+				width 22px
+				
+				
+				@media (min-width: width-tabletportrait)
+					height 56px
+					width 44px
+					
+				@media (min-width: width-tabletlandscape)
+					height 71px
+					width 55px
+					
+				@media (min-width: width-desktop)
+					height 84px
+					width 66px
+					
+		.caption
+			bottom 10%
+			
+			@media (min-width: width-tabletlandscape)
+				bottom auto
+				top 100px
+				
+			@media (min-width: width-desktop)
+				top 300px

@@ -1,0 +1,3 @@
+script.js contains all your custom js
+
+All vendor plugins should be in plugins folder

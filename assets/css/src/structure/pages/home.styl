@@ -1,0 +1,98 @@
+@import "../style.styl";
+
+//
+// Home
+// --------------------------------------------------
+
+.home
+	position relative
+	/*.animsition
+		background site-red*/
+	
+	.main
+		overflow hidden
+		
+		.container
+			position relative
+			z-index 2
+			
+			.para
+				margin 0 auto
+				text-align center
+				width 80%
+				
+				p
+					//margin-bottom 45px
+					margin 30px 0 45px
+					
+					@media (min-width: width-tabletportrait)
+						margin 60px 0 85px
+						
+			.zodiac
+				li
+					display inline-block
+					//float left
+					width auto
+					
+					a
+						display block
+						min-height 135px
+						margin 0 auto
+						min-width 135px
+						
+						@media (min-width: width-tabletportrait)
+							min-height 110px
+							min-width 110px
+							
+						@media (min-width: width-tabletlandscape)
+							min-height 135px
+							min-width 135px
+							
+		.pot
+			bottom -20px
+			//position relative
+			position absolute
+			width 100%
+			z-index 2
+			
+			@media (min-width: width-tabletportrait)
+				bottom 0
+				
+			> div
+				//bottom 250px
+				//bottom 170px
+				position absolute
+				
+			.left-pot
+				background url(img-folder "bg-home-left-pot.svg") 0 0 no-repeat
+				background-size contain
+				height 166px
+				left -60px
+				width 107px
+				
+				@media (min-width: width-tabletportrait)
+					height 244px
+					left -80px
+					width 157px
+					
+				@media (min-width: width-tabletlandscape)
+					height 426px
+					left -100px
+					width 274px
+					
+			.right-pot
+				background url(img-folder "bg-home-right-pot.svg") 0 0 no-repeat
+				background-size contain
+				height 149px
+				right -50px
+				width 89px
+				
+				@media (min-width: width-tabletportrait)
+					height 264px
+					right -80px
+					width 157px
+					
+				@media (min-width: width-tabletlandscape)
+					height 399px
+					right -100px
+					width 237px

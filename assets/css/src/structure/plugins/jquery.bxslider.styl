@@ -1,0 +1,48 @@
+@import "../style.styl";
+
+//
+// Bxslider
+// --------------------------------------------------
+
+/*.bxslider-wrapper*/
+	
+.bx-wrapper
+	background-color transparent
+	border none
+	box-shadow none
+	margin 0 auto
+	padding 0
+	
+	.bx-loading
+		background: url(img-folder "loader.gif") no-repeat center center
+		display none
+		
+	.bx-viewport
+		height 150px!important
+		margin 0 auto
+		position relative
+		width 200px!important
+		z-index 2
+		
+	.bx-controls
+		display none
+		height 28px
+		left 50%
+		margin-left -115px
+		position absolute
+		top 50%
+		width 240px
+		z-index 1
+		
+		a
+			height 14px
+			padding 10px
+			width 12px
+			
+			&.bx-prev
+				background url(img-folder "icon-carousel-arrow-left.png") center center no-repeat
+				left 0
+				
+			&.bx-next
+				background url(img-folder "icon-carousel-arrow-right.png") center center no-repeat
+				right 0

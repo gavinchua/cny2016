@@ -1,0 +1,5 @@
+All original vendor plugins styles here
+
+Add custom vendor plugins @ assets\css\src\structure\plugins
+
+* Add there so that styles wouldn't be over-written when someone update the plugin style.

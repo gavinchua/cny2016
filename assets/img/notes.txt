@@ -1,0 +1,3 @@
+src contains all original img before optimisation.
+
+dist contains all img after optimisation.

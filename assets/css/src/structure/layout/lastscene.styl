@@ -1,0 +1,237 @@
+@import "../style.styl";
+
+//
+// Last Scene
+// --------------------------------------------------
+
+zodiacList = (rat ox tiger rabbit dragon snake horse goat monkey rooster dog pig)
+
+.zodiac-content
+	.lastscene
+		background url(img-folder "lastscene-lantern.svg") center 0 no-repeat site-red-dark
+		background-size contain
+		padding 30px 0
+		position relative
+		text-align center
+		top -220px
+		z-index 6
+		
+		@media (min-width: width-tabletportrait)
+			padding 80px 0
+			
+		@media (min-width: width-tabletlandscape)
+			padding 50px 0
+			
+		/*.lanterns
+			background url(img-folder "lastscene-lantern.svg") center 0 no-repeat
+			height 884px
+			left 50%
+			margin-left -708px
+			position absolute
+			top 0
+			width 1417px*/
+			
+		h2
+			color site-yellow	
+			font-family 'Slackey',sans-serif
+			font-size 20px
+			margin 0 auto
+			position relative
+			text-transform uppercase
+			z-index 2
+			width 50%
+			
+			@media (min-width: width-tabletportrait)
+				font-size 36px
+				width 55%
+				
+			@media (min-width: width-tabletlandscape)
+				font-size 40px
+				width 100%
+				
+			@media (min-width: width-desktop)
+				font-size 50px
+				
+		/*h5
+			font-size 30px
+			margin 20px 0 0
+			position relative
+			text-transform uppercase
+			z-index 2*/
+			
+		.zodiac
+			/*background url(img-folder "lastscene-zodiac.svg") center center no-repeat
+			background-size contain
+			//height 884px
+			height 796px
+			left 50%
+			position absolute
+			top 50%
+			margin -382px 0 0 -637px
+			//width 1417px
+			width 1275px
+			z-index 3*/
+			
+			//margin 0 auto
+			left 50%
+			//margin-left -380px
+			margin 12% 0 12% -140px
+			position absolute
+			width 260px
+			z-index 3
+			
+			@media (min-width: width-tabletportrait)
+				margin 70px 0 0 -275px
+				width 560px
+				
+			@media (min-width: width-tabletlandscape)
+				margin 50px 0 0 -330px
+				width 700px
+				
+			@media (min-width: width-desktop)
+				margin 70px 0 0 -360px
+				width 760px
+				
+			li
+				float left
+				position relative
+				//z-index 1
+				
+				//zodiacList = (rat ox tiger rabbit dragon snake horse goat monkey rooster dog pig)
+				for val in zodiacList
+					&.{val}
+						background url(img-folder val "/character.svg") center center no-repeat
+						background-size contain
+						display block
+						height 64px
+						margin 5px
+						//position relative
+						width 55px
+						
+						@media (min-width: width-tabletportrait)
+							//height 128px
+							height 140px
+							margin 10px
+							//width 110px
+							width 120px
+							
+						@media (min-width: width-tabletlandscape)
+							height 169px
+							margin 15px
+							width 145px
+							
+						@media (min-width: width-desktop)
+							height 186px
+							margin 15px
+							width 160px
+							
+						/*a
+							display block
+							height 212px
+							width 182px*/
+							
+					//&.reset
+						//position absolute
+						
+					&.row1
+						left 20px
+						
+					&.row2
+						left -5px
+						top -30px
+						
+						@media (min-width: width-tabletportrait)
+							left -50px
+							top -75px
+							
+						@media (min-width: width-tabletlandscape)
+							left -85px
+							top -115px
+							
+					&.row3
+						left 20px
+						top -50px
+						//z-index 2
+						
+						@media (min-width: width-tabletportrait)
+							//left 20px
+							top -130px
+							
+						@media (min-width: width-tabletlandscape)
+							//left 20px
+							top -190px
+							
+				/*.character-shadow
+					background url(img-folder "character-shadow.svg") center center no-repeat
+					background-size contain
+					left 50%
+					margin-left -80px
+					position absolute
+					height 15px
+					width 160px*/
+					
+		.btn-wrapper
+			bottom 50px
+			left 50%
+			margin-left -140px
+			//padding-top 550px
+			//position relative
+			position absolute
+			width 280px
+			z-index 4
+			
+			@media (min-width: width-tabletportrait)
+				bottom 100px
+				margin-left -300px
+				width 600px
+				
+			@media (min-width: width-tabletlandscape)
+				bottom 50px
+				
+			> div
+				@media (min-width: width-tabletportrait)
+					float right
+					
+				&:first-child
+					@media (min-width: width-tabletportrait)
+						float left
+						
+				a
+					border 2px solid site-white
+					color site-white
+					display block
+					font-size 12px
+					//line-height 40px
+					margin 10px auto 0
+					padding 10px 0
+					//position relative
+					text-transform uppercase
+					width 240px
+					
+					@media (min-width: width-tabletportrait)
+						font-size 20px
+						margin 0
+						//width 240px
+						
+					&.share
+						background url(img-folder "icon-share.svg") 30px center no-repeat
+						padding-left 30px
+						//background-size contain
+						//display inline-block
+						//height 26px
+						//margin-right 15px
+						//position relative
+						//top 3px
+						//width 25px
+						
+						@media (min-width: width-tabletportrait)
+							background url(img-folder "icon-share.svg") 65px center no-repeat
+							padding-left 40px
+							
+					&:focus,
+					&:hover
+						background-color site-red-dark-hover
+						text-decoration none
+						
+		footer
+			background none

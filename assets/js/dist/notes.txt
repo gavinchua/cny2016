@@ -1,0 +1,3 @@
+Both js are the same here. Only the other is minified.
+
+vendor folder contains the various vendor files. Use them when needed.

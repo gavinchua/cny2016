@@ -1,0 +1,1 @@
+Both css are the same here. Only the other is minified.

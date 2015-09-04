@@ -1,0 +1,153 @@
+@import "../style.styl";
+
+//
+// Zodiac Intro
+// --------------------------------------------------
+
+zodiacList = (rat ox tiger rabbit dragon snake horse goat monkey rooster dog pig)
+
+.zodiac-loading-wrapper
+	position relative
+	z-index 2
+	//display table
+	
+	@media (min-width: width-tabletlandscape)
+		width 900px!important
+		
+	@media (min-width: width-desktop)
+		width 970px!important
+		
+	.loader-wrapper
+		//display table-cell
+		//vertical-align middle
+		
+		.loader
+			//bottom 80px
+			margin 0 auto 80px
+			position relative
+			height 146px
+			width 146px
+			
+			.icon
+				left 50%
+				height 146px
+				margin -98px 0 0 -84px
+				position absolute
+				top 50%
+				width 146px
+				
+				a
+					height 146px
+					width 146px
+					
+		.zodiac-intro
+			@media (min-width: width-tabletlandscape)
+				width 970px!important
+				
+			> div
+				@media (min-width: width-tabletlandscape)
+					display table
+					width 100%
+					
+				.left,
+				.right
+					@media (min-width: width-tabletlandscape)
+						display table-cell
+						vertical-align middle
+						
+				.left
+					//width 400px
+					
+					//zodiacList = (rat ox tiger rabbit dragon snake horse goat monkey rooster dog pig)
+					for val in zodiacList
+						.{val}
+							background url(img-folder val "/character.svg") center center no-repeat
+							background-size contain
+							display block
+							position relative
+							
+							&.character
+								height 210px
+								margin 0 auto
+								width 180px
+								
+								@media (min-width: width-tabletportrait)
+									height 407px
+									width 350px
+									
+								@media (min-width: width-tabletlandscape)
+									height 582px
+									width 500px
+								
+					/*.character-shadow
+						background url(img-folder "character-shadow.svg") center center no-repeat
+						background-size contain
+						left 50%
+						margin-left -80px
+						position absolute
+						height 15px
+						width 160px*/
+						
+				.right
+					//width 470px
+					padding 0 40px
+					text-align center
+					
+					@media (min-width: width-tabletlandscape)
+						padding 0
+						text-align left
+						
+					h2
+						font-family 'Slackey',sans-serif
+						font-size 20px
+						margin 20px 0 0
+						text-transform uppercase
+						
+						@media (min-width: width-tabletportrait)
+							font-size 40px
+							margin 30px 0 0
+							
+						@media (min-width: width-tabletlandscape)
+							font-size 60px
+							margin 40px 0 0
+							
+					h5
+						font-size 14px
+						margin 0 0 10px
+						text-transform uppercase
+						
+						@media (min-width: width-tabletlandscape)
+							font-size 18px
+							margin 0 0 20px
+							
+					.text
+						@media (min-width: width-tabletlandscape)
+							height 100px
+							
+					.btn-start
+						//background site-skyblue
+						//color site-black
+						color site-white
+						display inline-block
+						font-size 14px
+						//padding 10px 50px
+						//text-align center
+						//text-transform uppercase
+						
+						@media (min-width: width-tabletportrait)
+							font-size 18px
+							margin-top 20px
+							
+						@media (min-width: width-tabletlandscape)
+							font-size 21px
+							margin 0
+							
+						.icon-scrolling
+							background url(img-folder "icon-scrolling.svg") 0 0 no-repeat
+							display block
+							height 41px
+							margin 40px auto 0
+							width 41px
+							
+							&.bounce
+								animation(bounce 2s infinite)

@@ -1,0 +1,101 @@
+			<div class="main">
+				
+				<div class="zodiac-loading-wrapper zodiac display-table">
+					
+					<div class="loader-wrapper display-table-cell">
+						<div id="loader" class="loader">
+							<div class="goat icon"><a></a></div>
+						</div>
+						<div class="zodiac-intro display-table-cell scene0 hide-only">
+							<div>
+								<div class="left">
+									<div class="goat character"></div>
+								</div>
+								<div class="right">
+									<h2>Goat</h2>
+									<h5>Intern</h5>
+									<p class="text">The Goat peeps are known to be open to new tasks and challenges.</p>
+									<p class="btn-start">
+										Start Scrolling
+										<span class="icon-scrolling bounce"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<?php include "copyright.php"; ?>
+				
+			</div><!---->
+			
+			<div class="zodiac-content hide-only">
+				
+				<div class="scene1 scene">
+					<div class="drinks-wrapper clearfix">
+						<div class="pull-left"></div>
+						<div class="pull-right"></div>
+					</div>
+					<div class="goat character">
+						<!--<div class="character-shadow"></div>-->
+					</div>
+					<div class="caption">
+						<p>
+							In good times or baaad, Goats will have your baaack.
+						</p>
+					</div>
+				</div>
+				
+				<div class="scene2 scene">
+					<div class="goatsatwork-wrapper display-table">
+						<div class="display-table-row">
+							<div class="display-table-cell">
+								<div class="desk"></div>
+								<div class="goatsatwork up"></div>
+							</div>
+							<div class="display-table-cell">
+								<div class="desk"></div>
+								<div class="goatsatwork down"></div>
+							</div>
+						</div>
+						<div class="display-table-row bottom">
+							<div class="display-table-cell">
+								<div class="desk"></div>
+								<div class="goatsatwork down"></div>
+							</div>
+							<div class="display-table-cell">
+								<div class="desk"></div>
+								<div class="goatsatwork up"></div>
+							</div>
+						</div>
+					</div>
+					<div class="clock">
+						<div class="hour"></div>
+						<div class="min"></div>
+					</div>
+					<div class="caption">
+						<p>
+							Goats have amehhhzing level of commitment and dedication.
+						</p>
+					</div>
+				</div>
+				
+				<div class="scene3 scene">
+					<div class="caption">
+						<p>
+							Together, they can manage the unmeeeehnageable.
+						</p>
+					</div>
+					<div class="vehicles"></div>
+					<div class="goat-body">
+						<div class="goat-leg-left"></div>
+						<div class="goat-leg-right"></div>
+					</div>
+				</div>
+				
+				<div class="scene4 scene lastscene">
+					<?php include "lastscene.php"; ?>
+				</div>
+				
+			</div><!---->

@@ -1,0 +1,139 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Zodiac x Agency by Vintedge</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		
+		<!-- Facebook -->
+        <meta property="og:site_name" content="Zodiac x Agency by Vintedge">
+        <meta property="og:description" content="The 12 Zodiac animals in our office have a special treat for you today! You are invited to take an exclusive sneak peek behind the scenes and get to know the people who bring you impeccable service right here!">
+        <meta property="og:image" content="http://www.vintedge.com/zodiacxagency/fb-post.jpg">
+        <meta property="og:title" content="HAPPY YEAR OF THE GOAT by Vintedge">
+        <meta property="og:url" content="http://www.vintedge.com/zodiacxagency/">
+		
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="manifest" href="manifest.json">
+		<!-- Place favicon.ico in the root directory -->
+		
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Slackey|Comfortaa" type="text/css">
+		<link rel="stylesheet" href="/assets/css/dist/style.min.css">
+		
+		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	</head>
+	
+	<body class="desktop">
+		<!--[if lt IE 10]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
+        
+		<div class="home">
+		
+			<!--  ====================  -->
+			<!--  === Main content ===  -->
+			<!--  ====================  -->
+			<div class="animsition main">
+				<div class="container">
+					
+					<header>
+						<h1 data-wow-delay="1s" class="text-center wow bounceInDown">
+							Zodiac X Agency
+						</h1>
+					</header>
+					
+					<div data-wow-delay="1s" class="para wow fadeIn">
+						<p>
+							Welcome to the Vintedge office and boy, do we have a special treat for you today! You're exclusively invited to take a sneak peek behind the scenes and get to know the people behind Vintedge, who bring you impeccable service with a heart.
+							<br /><br />
+							Scan the QR Code to find out more.
+							<br /><br />
+							<img src="https://chart.googleapis.com/chart?cht=qr&chs=100x100&chl=http://10.1.1.67:8000/" />
+						</p>
+					</div>
+					
+					<!--<div class="zodiac">
+						<ul class="bxslider-carousel clearfix">
+							
+							<li data-wow-delay="1.2s" class="goat wow bounceInDown slide">
+								<a href="#" rel="goat" data-wow-iteration="1" data-wow-duration="0.1s" class="wow"></a>
+							</li>
+							<li data-wow-delay="1.3s" class="monkey wow bounceInDown slide">
+								<a href="#" rel="monkey" data-wow-iteration="1" data-wow-duration="0.1s" class="wow"></a>
+							</li>
+							
+						</ul>
+					</div>-->
+					
+				</div>
+				
+				<div class="pot">
+					<div class="left-pot"></div>
+					<div class="right-pot"></div>
+				</div>
+				
+				<footer>
+					<div class="pull-left">
+						<div class="copyright">
+							&copy; 2015 Vintedge Pte Ltd
+						</div>
+					</div>
+					<div class="pull-right">
+						<div class="logo">
+							<a href="http://vintedge.com/" target="_blank"></a>
+						</div>
+					</div>
+				</footer>
+				
+			</div>
+			
+		</div>
+		
+		<!--<div class="zodiac-wrapper goat-wrapper hide-only"></div>
+		
+		<div class="zodiac-wrapper monkey-wrapper hide-only"></div>-->
+		
+		<!-- JavaScript at the bottom for fast page loading -->
+		
+		<!--[if lte IE 8]>
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+			<script>window.jQuery || document.write('<script src="assets/js/dist/vendor/jquery.min.js"><\/script>')</script>
+			<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+		<![endif]-->
+		
+		<!--[if gt IE 8]><!-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="assets/js/dist/vendor/jquery.2.min.js"><\/script>')</script>
+		<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>-->
+		<!--<![endif]-->
+		
+		<script src="assets/js/dist/script.min.js"></script>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			/*(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');*/
+		</script>
+		
+		<script src="/socket.io/socket.io.js"></script>
+		
+		<script>
+			var socket = io.connect( 'http://10.1.1.67:8000' );
+			socket.on( 'urlchange', function(data){
+				window.location.href = data.url;
+			});
+		</script>
+		
+	</body>
+</html>

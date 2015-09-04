@@ -1,0 +1,3 @@
+All custom vendor plugins styles here
+
+* Add here so that styles wouldn't be over-written when someone update the plugin style.

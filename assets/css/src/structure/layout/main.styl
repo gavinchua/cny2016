@@ -1,0 +1,85 @@
+@import "../style.styl";
+
+//
+// Main
+// --------------------------------------------------
+
+zodiacList = (rat ox tiger rabbit dragon snake horse goat monkey rooster dog pig)
+
+html
+body
+	font-family 'Comfortaa',sans-serif
+	height 100%
+	
+body
+	background site-black
+	color #fff
+	font-size 12px
+	position relative
+	
+	@media (min-width: width-tabletportrait)
+		font-size 14px
+		
+	.main
+		background site-red
+		//overflow hidden
+		
+		.zodiac
+			margin 0 auto
+			//width 664px
+			
+			for val in zodiacList
+				.{val}
+					a
+						background url(img-folder "icon-" + val + ".svg") 0 0 no-repeat
+						background-size contain
+						display block
+						//height 146px
+						margin 10px
+						position relative
+						transition all .4s ease-in-out
+						//width 146px
+						z-index 2
+					
+					/*a
+						height 136px
+						position relative
+						width 136px*/
+						
+	.zodiac-content
+		position relative
+		
+	.ScrollSceneIndicators
+		z-index 999999!important
+		
+.bg-red
+	background site-red
+	
+.display-table
+	display table
+	width 100%
+	
+.display-table-row
+	display table-row
+	
+.display-table-cell
+	display table-cell
+	//text-align center
+	vertical-align middle
+	
+.hide-only
+	display none
+	
+.overflow-y-hidden
+	overflow-y hidden
+	
+.zoomLarge
+	transform scale( 1.1 )
+	
+@keyframes bounce
+	0%, 20%, 50%, 80%, 100%
+		transform translateY(0)
+	40%
+		transform translateY(-30px)
+	60%
+		transform translateY(-15px);
