@@ -55,7 +55,7 @@
 							<br /><br />
 							Scan the QR Code to find out more.
 							<br /><br />
-							<img src="https://chart.googleapis.com/chart?cht=qr&chs=100x100&chl=http://10.1.1.67:8000/" />
+							<img src="https://chart.googleapis.com/chart?cht=qr&chs=100x100&chl=https://cny2016.herokuapp.com//" />
 						</p>
 					</div>
 					
@@ -129,7 +129,7 @@
 		<script src="/socket.io/socket.io.js"></script>
 		
 		<script>
-			var socket = io.connect( 'http://10.1.1.67:8000' );
+			var socket = io.connect( 'https://cny2016.herokuapp.com/' );
 			socket.on( 'urlchange', function(data){
 				window.location.href = data.url;
 			});
