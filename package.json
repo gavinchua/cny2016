@@ -3,8 +3,6 @@
   "version": "0.0.1",
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
-  "homepage": "http://vintedge.com/",
-  "author": "Vintedge UI",
   "scripts": {
     "start": "node index.js"
   },
