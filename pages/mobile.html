@@ -156,7 +156,7 @@
 			
 			$( '.btn-home' ).bind( 'tapone', function(e){
 				e.preventDefault();
-				socket.emit( 'statechange', { url : '/' } );
+				socket.emit( 'statechange', { url : 'https://cny2016.herokuapp.com/' } );
 				
 				$( '.para, .zodiac' ).show();
 				
