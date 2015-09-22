@@ -75,6 +75,9 @@
 							<li>
 								<a href="#" class="btn-home">Back</a>
 							</li>
+							<li>
+								<a href="#" class="btn-scroll">Scroll</a>
+							</li>
 						</ul>
 					</div>
 					
@@ -151,6 +154,7 @@
 			
 			$( '.btn-scroll' ).bind( 'tapone', function(e){
 				e.preventDefault();
+				socket.emit( 'scrollpage', '100' );
 				//$( window ).scrollTop( y + 150 );
 			});
 			

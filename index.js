@@ -40,4 +40,9 @@ io.on('connection', function (socket) {
         // Broadcast changes to all clients in room
         socket.to('main').emit('urlchange', { url : data.url });
     });
+	
+	socket.on('scrollpage', function (data) {
+        // Broadcast changes to all clients in room
+        console.log(data);
+    });
 });
